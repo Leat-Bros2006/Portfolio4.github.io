@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --gray: gray;
+    --white: #fff;
+    --black: #000;
+    --blue: #36b057;
+}
+
+/* header */
+.header {
+    width: 100%;
+    padding: 10px 150px;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.header .logo h3 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 28px;
+}
+
+.header .logo h3 span {
+    color: var(--blue);
+}
+
+/* menu */
+.header .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: var(--gray);
+    font-weight: bold;
+    display: block;
+    transition: all 0.3s;
+}
+
+.header .menu li a:hover {
+    transform: translatey(-2px);
+}
+
+.header .menu li .contact {
+    padding: 12px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 12px;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .box {
+    width: 50%;
+    background-color: var(--white);
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+main .box h3 {
+    font-family: sans-serif;
+
+}
+
+main .box p{
+    font-family: sans-serif;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+main .box .btn button{
+    padding: 12px 30px;
+    border:none;
+    background-color: var(--blue);
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+main .box .btn button:hover{
+    background-color: #2e974a;
+}
+
+main .uxuiDesign{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+main .graphicDesign{
+    background-color: #333;    
+    color: white;
+}
+
+footer{
+    background-color: var(--black);
+    padding: 20px ;
+    color: var(--white);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12px;
+    letter-spacing:2px;
+
+}
